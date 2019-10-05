@@ -7,6 +7,8 @@ public class ToggleBodyParts : MonoBehaviour
 {
     Toggle m_Toggle;
     public GameObject m_obj;
+    public GameObject m_obj2;
+    public GameObject m_obj3;
 
     void Start()
     {
@@ -22,5 +24,7 @@ public class ToggleBodyParts : MonoBehaviour
     void ToggleValueChanged(Toggle change)
     {
         m_obj.SetActive(!m_obj.activeSelf);
+        m_obj2.SetActive(!m_obj2.activeSelf);
+        m_obj3.SetActive(!m_obj3.activeSelf);
     }
 }
